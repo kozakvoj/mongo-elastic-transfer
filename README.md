@@ -1,5 +1,11 @@
 # mongo-elastic-transfer
 
+[![NPM](https://nodei.co/npm/mongo-elastic-transfer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/mongo-elastic-transfer/)
+
+Simple Node.js module for fast transferring data from MongoDB to Elastic.
+
+Data are streamed from MongoDB and inserted as a bulk to MongeDB. Bulk size is configurable and should be considered based on data size. You can read more about bulk size in the official documentation [https://www.elastic.co/guide/en/elasticsearch/guide/current/indexing-performance.html#_using_and_sizing_bulk_requests]().
+
 ## Usage
 
 ```javascript

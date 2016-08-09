@@ -1,6 +1,6 @@
 {
-  "name": "elastic-index-incrementer",
-  "version": "1.0.3",
+  "name": "mongo-elastic-transfer",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kozakvoj/elastic-index-incrementer.git"
+    "url": "git+https://github.com/kozakvoj/mongo-elastic-transfer.git"
   },
   "author": "Vojtech Kozak",
   "bugs": {
-    "url": "https://github.com/kozakvoj/elastic-index-incrementer/issues"
+    "url": "https://github.com/kozakvoj/mongo-elastic-transfer/issues"
   },
-  "homepage": "https://github.com/kozakvoj/elastic-index-incrementer#readme",
+  "homepage": "https://github.com/kozakvoj/mongo-elastic-transfer#readme",
   "dependencies": {
     "winston": "^2.2.0"
   }

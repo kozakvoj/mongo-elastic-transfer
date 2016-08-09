@@ -1,4 +1,4 @@
-# Mongo Elastic Transfer - Fast transfer from MongoDB to Elastic
+# mongo-elastic-transfer
 
 [![NPM](https://nodei.co/npm/mongo-elastic-transfer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/mongo-elastic-transfer/)
 

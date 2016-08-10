@@ -12,6 +12,8 @@
     mongoElasticTransfer.transfer = (opts, callback) => {
         const {esClient, mClient, index, type, collection} = opts;
         const bulkSize = opts.bulkSize || 10000;
+        const preserveIds = opts.preserveIds || false;
+
         let bulk;
 
         const onData = (() => {
@@ -21,7 +23,10 @@
                 if (clear) {
                     bulk = [];
                 } else {
-                    bulk.push({index: {_index: index, _type: type}});
+                    preserveIds ?
+                        bulk.push({index: {_index: index, _type: type, _id: data._id}}) :
+                        bulk.push({index: {_index: index, _type: type}});
+
                     delete data._id;
                     bulk.push(data);
                 }

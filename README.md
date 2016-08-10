@@ -10,12 +10,13 @@ Data are streamed from MongoDB and inserted as a bulk to MongeDB. Bulk size is c
 
 ```javascript
 mongoElasticTransfer.transfer({
-        esClient  : esClient,
-        mClient   : mClient,
-        index     : index,
-        type      : type,
-        collection: collection,
-        [bulkSize  : bulkSize]
+        esClient    : esClient,
+        mClient     : mClient,
+        index       : index,
+        type        : type,
+        collection  : collection,
+        [preserveIds: preserveIds],
+        [bulkSize   : bulkSize]
     }, callback);
 ```
 
@@ -30,6 +31,9 @@ Elastic index name.
 
 **type**
 Elastic type.
+
+**preserveIds**
+Keeps the same ID as in MongoDB.
 
 **collection**
 Mongo collection name.

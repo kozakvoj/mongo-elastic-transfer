@@ -22,7 +22,8 @@
                     bulk = [];
                 } else {
                     bulk.push({index: {_index: index, _type: type}});
-                    bulk.push({doc: data});
+                    delete data._id;
+                    bulk.push(data);
                 }
 
                 return bulk;

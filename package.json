@@ -1,6 +1,6 @@
 {
   "name": "mongo-elastic-transfer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Fast transfer from MongoDB to Elastic",
   "main": "index.js",
   "scripts": {
